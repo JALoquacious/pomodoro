@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1 id='title'>Pomodoro Timer</h1>
+    <h4>Work Interval:</h4>
+    <div id="slider-work" class="sliders"></div>
+    <h4>Break Interval:</h4>
+    <div id="slider-break" class="sliders"></div>
+    <div id='bar-container'>
+        <h3 id='status'>Ready!</h4>
+        <h1 id='clock'>02:00</h1>
+        <div id='progress-bar'>
+        </div>
+    </div>
+    <div class='controls'>
+        <img id='reset' src="images/reset.png" onmouseover="this.src='images/reset_hover.png'" onmouseout="this.src='images/reset.png'" />
+        <img id='play' src="images/play.png" onmouseover="this.src='images/play_hover.png'" onmouseout="this.src='images/play.png'" />
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.5.1/nouislider.min.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
